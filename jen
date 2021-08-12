@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+   
+    stages {
+        stage('Build') {
+            steps {
+                git 'https://github.com/nagiri511/temp.git'
+            }
+        }
+         stage('Test') {
+            steps {
+                
+               echo 'sample'
+            }
+        }
+    }
+}
